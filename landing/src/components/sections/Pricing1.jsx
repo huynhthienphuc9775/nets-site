@@ -85,17 +85,7 @@ class Pricing1 extends Component {
       <div className="section section-pricing1" id="pricing1">
         <div className="container">
           <div className="section__header">
-            <h2>Choose a Plan</h2>
-            <FormControlLabel
-              control={
-                <Switch
-                  color="primary"
-                  checked={this.state.switchState}
-                  onChange={this.handleSwitchChange}
-                />
-              }
-              label="Get up to 10% discount annually"
-            />
+            <h2>Bảng giá</h2>
           </div>
 
           <Grid container spacing={16}>
