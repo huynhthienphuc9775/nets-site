@@ -13,7 +13,6 @@ class Contact1 extends Component {
 
   handleSubmit = event => {
     console.log("submitted");
-    console.log(event);
   };
 
   handleChange = event => {
@@ -27,11 +26,7 @@ class Contact1 extends Component {
       <div className="section section-contact1 light-gray" id="contact1">
         <div className="container">
           <div className="section__header">
-            <h2>Send Us an Email</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-              error.
-            </p>
+            <h2>Liên hệ với chúng tôi</h2>
           </div>
 
           <ValidatorForm
@@ -41,7 +36,7 @@ class Contact1 extends Component {
           >
             <TextValidator
               className="mb-16 w-100"
-              label="Name"
+              label="Tên"
               onChange={this.handleChange}
               name="name"
               value={name}
@@ -60,7 +55,7 @@ class Contact1 extends Component {
             />
             <TextValidator
               className="my-16 w-100"
-              label="Subject"
+              label="Số điện thoại"
               onChange={this.handleChange}
               name="subject"
               value={subject}
@@ -69,7 +64,7 @@ class Contact1 extends Component {
             />
             <TextValidator
               className="my-16 mb-32 w-100"
-              label="Message"
+              label="Tin nhắn"
               onChange={this.handleChange}
               name="message"
               multiline
